@@ -98,7 +98,7 @@ Current TCP Proxies:
 ```text
 Protocol: VLESS
 Address: trolley.proxy.rlwy.net
-Port: 52356
+Port: 50210
 UUID: b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a
 Transport: TCP
 TLS: disabled
@@ -116,7 +116,7 @@ TLS: disabled
 URIs for clients that support importing a single TCP node:
 
 ```text
-vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@trolley.proxy.rlwy.net:52356?encryption=none&security=none&type=tcp#railway-tcp-trolley
+vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@trolley.proxy.rlwy.net:50210?encryption=none&security=none&type=tcp#railway-tcp-trolley
 vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@shortline.proxy.rlwy.net:36682?encryption=none&security=none&type=tcp#railway-tcp-shortline
 ```
 
