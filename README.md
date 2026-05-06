@@ -44,6 +44,33 @@ Then open:
 http://localhost:8080
 ```
 
+## LAN speedtest page
+
+Run the local batch speedtest page:
+
+```bash
+python3 lan_speedtest.py --host 0.0.0.0 --port 18080
+```
+
+Open it from the same machine:
+
+```text
+http://127.0.0.1:18080
+```
+
+Or from another LAN device:
+
+```text
+http://YOUR_LAN_IP:18080
+```
+
+The page accepts one target per line, for example:
+
+```text
+devoted-ws-2c73 https://devoted-optimism-production-2c73.up.railway.app/proxy
+devoted-tcp trolley.proxy.rlwy.net:33016
+```
+
 ## Optional ttyd authentication
 
 Set these Railway variables if you want the browser terminal protected:
