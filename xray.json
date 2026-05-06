@@ -37,7 +37,10 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "tcp"
+        "network": "tcp",
+        "sockopt": {
+          "acceptProxyProtocol": true
+        }
       }
     }
   ],
