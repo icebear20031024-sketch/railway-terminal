@@ -147,6 +147,19 @@ vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@trolley.proxy.rlwy.net:50210?encryp
 vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@shortline.proxy.rlwy.net:36682?encryption=none&security=none&type=tcp#railway-tcp-shortline
 ```
 
+## Trojan TCP Proxy test parameters
+
+Create a Railway TCP Proxy with target port `10002`, then use the generated host and port.
+
+```text
+Protocol: Trojan
+Password: b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a
+Transport: TCP
+TLS: disabled
+```
+
+Use the Railway generated TCP proxy host and port in your client.
+
 ## Notes
 
 - The shell is exposed through the web UI, so set `TTYD_USER` and `TTYD_PASS` before using it for anything sensitive.

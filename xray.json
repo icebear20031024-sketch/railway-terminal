@@ -44,6 +44,21 @@
           "acceptProxyProtocol": true
         }
       }
+    },
+    {
+      "port": 10002,
+      "listen": "0.0.0.0",
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password": "b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
     }
   ],
   "outbounds": [
