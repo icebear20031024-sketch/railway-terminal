@@ -62,6 +62,14 @@ If either variable is missing, ttyd starts without authentication.
 3. Railway builds from `Dockerfile` automatically.
 4. Open the generated public domain after deployment.
 
+## VLESS subscription
+
+Use this URL in clients that ask for a subscription link:
+
+```text
+https://railway-terminal-production.up.railway.app/sub
+```
+
 ## VLESS client parameters
 
 ```text
@@ -75,7 +83,7 @@ TLS: enabled
 SNI: railway-terminal-production.up.railway.app
 ```
 
-URI:
+URI for clients that support importing a single node:
 
 ```text
 vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@railway-terminal-production.up.railway.app:443?encryption=none&security=tls&type=ws&host=railway-terminal-production.up.railway.app&path=%2Fproxy#railway-terminal
