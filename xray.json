@@ -22,6 +22,23 @@
           "path": "/proxy"
         }
       }
+    },
+    {
+      "port": 10001,
+      "listen": "0.0.0.0",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a",
+            "level": 0
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
     }
   ],
   "outbounds": [

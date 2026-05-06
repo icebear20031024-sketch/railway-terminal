@@ -70,7 +70,7 @@ Use this URL in clients that ask for a subscription link:
 https://railway-terminal-production.up.railway.app/sub
 ```
 
-## VLESS client parameters
+## VLESS WebSocket client parameters
 
 ```text
 Protocol: VLESS
@@ -83,10 +83,31 @@ TLS: enabled
 SNI: railway-terminal-production.up.railway.app
 ```
 
-URI for clients that support importing a single node:
+URI for clients that support importing a single WebSocket node:
 
 ```text
 vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@railway-terminal-production.up.railway.app:443?encryption=none&security=tls&type=ws&host=railway-terminal-production.up.railway.app&path=%2Fproxy#railway-terminal
+```
+
+## VLESS TCP Proxy client parameters
+
+Create a Railway TCP Proxy with target port `10001`, then use the generated host and port.
+
+Current TCP Proxy:
+
+```text
+Protocol: VLESS
+Address: trolley.proxy.rlwy.net
+Port: 52356
+UUID: b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a
+Transport: TCP
+TLS: disabled
+```
+
+URI for clients that support importing a single TCP node:
+
+```text
+vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@trolley.proxy.rlwy.net:52356?encryption=none&security=none&type=tcp#railway-tcp
 ```
 
 ## Notes

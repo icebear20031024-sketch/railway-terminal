@@ -38,6 +38,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY xray.json /usr/local/etc/xray/config.json
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 8080
+EXPOSE 8080 10001
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
