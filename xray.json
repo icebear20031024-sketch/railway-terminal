@@ -59,9 +59,6 @@
       "streamSettings": {
         "network": "tcp",
         "security": "tls",
-        "tcpSettings": {
-          "acceptProxyProtocol": true
-        },
         "tlsSettings": {
           "certificates": [
             {
