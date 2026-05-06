@@ -93,7 +93,7 @@ vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@railway-terminal-production.up.rail
 
 Create a Railway TCP Proxy with target port `10001`, then use the generated host and port.
 
-Current TCP Proxy:
+Current TCP Proxies:
 
 ```text
 Protocol: VLESS
@@ -104,10 +104,20 @@ Transport: TCP
 TLS: disabled
 ```
 
-URI for clients that support importing a single TCP node:
+```text
+Protocol: VLESS
+Address: shortline.proxy.rlwy.net
+Port: 36682
+UUID: b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a
+Transport: TCP
+TLS: disabled
+```
+
+URIs for clients that support importing a single TCP node:
 
 ```text
-vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@trolley.proxy.rlwy.net:52356?encryption=none&security=none&type=tcp#railway-tcp
+vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@trolley.proxy.rlwy.net:52356?encryption=none&security=none&type=tcp#railway-tcp-trolley
+vless://b25ebeb5-185b-4666-b3bb-9a9b3cf0ad9a@shortline.proxy.rlwy.net:36682?encryption=none&security=none&type=tcp#railway-tcp-shortline
 ```
 
 ## Notes
