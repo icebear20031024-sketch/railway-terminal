@@ -24,7 +24,6 @@ RUN bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-rel
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY xray.json /usr/local/etc/xray/config.json
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-COPY sub.txt /usr/share/nginx/html/sub.txt
 
 EXPOSE 8080
 
