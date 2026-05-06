@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     git \
     nano \
     nginx \
+    openssl \
     supervisor \
     tmux \
     ttyd \
@@ -32,6 +33,10 @@ RUN set -eux; \
     install -d /usr/local/share/xray /usr/local/etc/xray; \
     [ -f /tmp/xray/geoip.dat ] && install -m 644 /tmp/xray/geoip.dat /usr/local/share/xray/geoip.dat || true; \
     [ -f /tmp/xray/geosite.dat ] && install -m 644 /tmp/xray/geosite.dat /usr/local/share/xray/geosite.dat || true; \
+    openssl req -x509 -nodes -newkey rsa:2048 -days 3650 \
+      -keyout /usr/local/etc/xray/trojan.key \
+      -out /usr/local/etc/xray/trojan.crt \
+      -subj "/CN=railway-trojan"; \
     rm -rf /tmp/xray /tmp/xray.zip
 
 COPY nginx.conf /etc/nginx/nginx.conf
