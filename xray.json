@@ -1,4 +1,12 @@
 {
+  "dns": {
+    "queryStrategy": "UseIPv4",
+    "servers": [
+      "8.8.8.8",
+      "1.1.1.1",
+      "9.9.9.9"
+    ]
+  },
   "log": {
     "access": "/dev/stdout",
     "error": "/dev/stderr",
@@ -72,7 +80,10 @@
   ],
   "outbounds": [
     {
-      "protocol": "freedom"
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIPv4"
+      }
     }
   ]
 }
